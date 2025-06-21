@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMW M8</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #111;
+    }
+    header.hero {
+      background: url('m8banner.jpg') center/cover no-repeat;
+      color:white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background-color: #333;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .gallery .images, .carousel {
+      display: flex;
+      gap: 15px;
+      overflow-x: auto;
+      padding-bottom: 10px;
+    }
+    .gallery img, .carousel img {
+      height: 250px;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover, .carousel img:hover {
+      transform: scale(1.05);
+    }
+    ul {
+      list-style: disc;
+      padding-left: 20px;
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    footer {
+      background: #111;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .footer-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+     list-style: none;
+    }
+    h1, h2 {
+      color: #003580;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+  <div class="logo">
+    <a href="index.html"><img src="logo.png" width="50" height="80"></a>
+    <p>BMW M8 competition coupè</p>
+
+  </header>
+
+  <section class="about">
+    <h2>BMW 8 Series Coupé M Automobiles</h2>
+    <p>The BMW M8 Competition Coupé combines motorsport engineering with luxury aesthetics. Celebrating 50 years of BMW M, this model is the embodiment of dynamic performance, technological precision, and exclusive style. With 625 hp and a 0-100 km/h acceleration of just 3.2 seconds, it truly redefines the driving experience.</p>
+  </section>
+
+  <section class="gallery">
+    <h2>Exterior Highlights</h2>
+    <div class="images">
+      <img src="exteriorM8-1.jpg" alt="BMW M8 Side View" />
+      <img src="exteriorM8-2.jpg" alt="BMW M8 Front View" />
+      <img src="exteriorM8-3.jpg" alt="BMW M8 Rear View" />
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h2>Interior Highlights</h2>
+    <div class="images">
+      <img src="interior M8-1.jpg" alt="M8 Interior Cockpit" />
+      <img src="interiorM8-2.jpg" alt="M8 Driver's Seat" />
+      <img src="interior M8-3.jpg" alt="M8 Steering Wheel" />
+    </div>
+  </section>
+
+  <section class="features">
+    <h2>Technologies & Assistance</h2>
+    <ul>
+      <li>M-specific Head-Up Display and Instrument Cluster</li>
+      <li>Configurable M1/M2 Steering Buttons</li>
+      <li>Red Start/Stop Button & M MODE Controls</li>
+      <li>Advanced Driver Assistance Systems</li>
+    </ul>
+  </section>
+
+  <section class="technical">
+    <h2>Technical Specifications</h2>
+    <ul>
+      <li>Engine Power: 460 kW (625 hp) @ 6000 rpm</li>
+      <li>Torque: 750 Nm @ 1800–5600 rpm</li>
+      <li>0–100 km/h: 3.2 seconds</li>
+      <li>Fuel Consumption: 8.77 km/l (combined)</li>
+      <li>CO2 Emissions: 262 g/km (combined)</li>
+    </ul>
+  </section>
+
+  <section class="gallery">
+    <h2>360° View Simulation</h2>
+    <div class="carousel">
+      <img src="frontviewM8.jpg" alt="Front Angle" />
+      <img src="m8banner.jpg" alt="Side Angle" />
+      <img src="exteriorM8-3.jpg" alt="Rear Angle" />
+      <!-- Add more side angle images for a better effect -->
+    </div>
+    <p style="text-align:center;">Swipe or drag to simulate 360° rotation</p>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-links">
+      <a href="#">Find a Dealer</a>
+      <a href="#">Book a Test Drive</a>
+      <a href="#">BMW Financial Services</a>
+      <a href="#">Legal Disclaimer</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p>© BMW  2025</p>
+  </footer>
+</body>
+</html>

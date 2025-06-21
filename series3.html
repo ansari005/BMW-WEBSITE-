@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMW M340i</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #111;
+    }
+
+    header {
+      background: url(bannerm3.jpg) center/cover no-repeat;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: #0066b2;
+      text-align: center;
+    }
+
+    /* Banner */
+    .banner {
+      max-width: 1000px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+
+    .banner img {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+    }
+
+    .banner p {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* Carousel */
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      -webkit-overflow-scrolling: touch;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+
+    .carousel img {
+      flex: 0 0 100%;
+      max-height: 500px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      scroll-snap-align: start;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /* Tech Slider */
+    .tech-slider {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+
+    .tech-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+
+    .tech-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .tech-card p {
+      padding: 1rem;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+    footer {
+      background: #111;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .footer-links a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 10px;
+     list-style: none;
+    }
+
+
+    @media (max-width: 768px) {
+      .carousel img {
+        height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+  <div class="logo">
+    <a href="index.html"><img src="logo.png" width="50" height="80"></a>
+  </div><br>
+    <p>THE BMW M340i</p>
+  </header>
+
+  <div class="banner">
+    <img src="series3banner.jpg" alt="BMW M340i Banner">
+    <p>
+      The BMW M340i is a perfect blend of dynamic performance, advanced technology, and luxurious comfort.  
+      With its aggressive exterior, cutting-edge curved display, and driver-focused cockpit, the M340i offers an experience like no other.  
+      Explore its powerful design, intelligent features, and superior engineering through this immersive showcase.
+    </p>
+  </div>
+
+  <section>
+    <h2>Exterior Design</h2>
+    <div class="carousel">
+      <img src="exterior 1.jpg" alt="BMW Exterior 1">
+      <img src="exterio3.jpg" alt="BMW Exterior 2">
+    </div>
+  </section>
+
+  <section>
+    <h2>Interior Design</h2>
+    <div class="carousel">
+      <img src="interior1.jpg" alt="BMW Interior 1">
+      <img src="interior2.jpg" alt="BMW Interior 2">
+<img src="interior3.jpg" alt="BMW Interior 2">
+ <img src="interior4.jpg" alt="BMW Interior 2">
+    </div>
+  </section>
+
+  <section>
+    <h2>Digital Technology Highlights</h2>
+    <div class="tech-slider">
+      <div class="tech-card">
+        <img src="technology 3.jpg" alt="BMW Curved Display">
+        <p><strong>BMW Curved Display:</strong> A full digital cockpit with intuitive touch control.</p>
+      </div>
+      <div class="tech-card">
+        <img src="digitalkey.jpg" alt="Digital Key">
+        <p><strong>BMW Digital Key:</strong> Unlock and start your car using your smartphone.</p>
+      </div>
+      <div class="tech-card">
+        <img src="voice1.jpg" alt="Voice Assistant">
+        <p><strong>BMW Intelligent Personal Assistant:</strong> Voice control and automation for daily tasks.</p>
+      </div>
+    </div>
+  </section>
+  <footer id="contact">
+    <div class="footer-links">
+      <a href="#">Find a Dealer</a>
+      <a href="#">Book a Test Drive</a>
+      <a href="#">BMW Financial Services</a>
+      <a href="#">Legal Disclaimer</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p>© BMW  2025</p>
+  </footer>
+
+</body>
+</html>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a BMW Test Drive</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <style>
+    footer {
+      background: #111;
+      color: #f1f1f1;
+      padding: 3rem 1rem;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .social-icons {
+      margin-bottom: 1rem;
+    }
+
+    .social-icons a {
+      color: #aaa;
+      margin: 0 15px;
+      font-size: 1.5rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #007bff;
+      transform: scale(1.2);
+    }
+
+    .footer-info {
+      margin-top: 1rem;
+    }
+
+    .footer-info h4 {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+      color: #ddd;
+    }
+
+    .footer-info p {
+      font-size: 0.95rem;
+      margin: 4px 0;
+    }
+
+    .footer-links {
+      margin-top: 1.5rem;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      margin: 0 12px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: color 0.3s;
+    }
+
+    .footer-links a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+
+    /* Optional: form enhancements */
+    .booking-form {
+      padding: 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+      background: #f8f8f8;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .booking-form h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #003399;
+    }
+
+    .booking-form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 0.5rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .booking-form button {
+      background-color: #003399;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .booking-form button:hover {
+      background-color: #002277;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><img src="logo.png" width="50" height="80"></a>
+      </div>
+      <ul>
+        <li><a href="login.html"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="booking-form">
+    <h2>Book a Test Drive &nbsp;<i class="fa-solid fa-car"></i></h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="model">Select BMW Model:</label>
+      <select id="model" name="model" required>
+        <option value="">Choose one</option>
+        <option value="3">BMW 3 Series</option>
+        <option value="5">BMW 5 Series</option>
+        <option value="x5">BMW X5</option>
+        <option value="i8">BMW i8</option>
+        <option value="z4">BMW Z4</option>
+      </select>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required />
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </section>
+
+  <footer id="contact">
+    <div class="social-icons">
+      <a href="https://www.facebook.com/bmwindia" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/bmwindia_official?igsh=bGM5MTltbGx1MDAz" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.youtube.com/bmwindia" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.twitter.com/bmwindia" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="footer-info">
+      <h4>Contact</h4>
+      <p>Email: info@bmw.com</p>
+      <p>Phone: +91-123-456-7890</p>
+    </div>
+    <div class="footer-links">
+      <a href="#">Find a Dealer</a>
+      <a href="#">Book a Test Drive</a>
+      <a href="#">BMW Financial Services</a>
+      <a href="#">Legal Disclaimer</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <p class="footer-bottom">&copy; 2025 BMW India. All rights reserved.</p>
+  </footer>
+</body>
+</html>

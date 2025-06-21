@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title></title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background:url(x5banner.jpg) center/cover no-repeat;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .btn-login {
+      background-color: #003399;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    /* Modal styles */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0; top: 0;
+      width: 100%; height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 10% auto;
+      padding: 30px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .modal-content h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      color: #003399;
+    }
+
+    .modal-content input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .modal-content button {
+      width: 100%;
+      padding: 10px;
+      background-color: #003399;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      margin-top: -10px;
+    }
+
+    .close:hover {
+      color: black;
+      cursor: pointer;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .social-icons a {
+      color: #aaa;
+      margin: 0 10px;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .social-icons a:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1 style="color: black;"> <a href="index.html"><img src="logo.png" width="50" height="80"></a></h1>
+    <button class="btn-login" onclick="openModal()">Login</button>
+  </header>
+
+  <!-- Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <input type="text" placeholder="Username or Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+               <p style="text-align: center;color: black;">Don't have a account &nbsp;<a href="register.html" style="color: black;text-decoration: none;">Register</a></p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://facebook.com/bmwindia"><i class="fab fa-facebook"></i></a>
+      <a href="https://instagram.com/bmwindia_official"><i class="fab fa-instagram"></i></a>
+      <a href="https://youtube.com/bmwindia"><i class="fab fa-youtube"></i></a>
+      <a href="https://twitter.com/bmwindia"><i class="fab fa-twitter"></i></a>
+    </div>
+    <p>&copy; 2025 BMW India. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function openModal() {
+      document.getElementById('loginModal').style.display = 'block';
+    }
+    function closeModal() {
+      document.getElementById('loginModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      if (event.target === document.getElementById('loginModal')) {
+        closeModal();
+      }
+    }
+  </script>
+
+</body>
+</html>
